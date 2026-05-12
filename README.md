@@ -26,28 +26,30 @@
 | V3 | 192.168.205.12 | 数据库从库 + 日志中心 |
 
 ## 项目结构
+
+​```
 ops-platform/
 ├── README.md
 ├── arch.png
 ├── .gitignore
 ├── scripts/
-│ ├── start.sh
-│ ├── stop.sh
-│ ├── mysql_backup.sh
-│ └── check_app.sh
+│   ├── start.sh
+│   ├── stop.sh
+│   ├── mysql_backup.sh
+│   └── check_app.sh
 ├── configs/
-│ ├── prometheus.yml
-│ ├── loki-config.yaml
-│ ├── promtail-config.yaml
-│ └── nginx.conf
+│   ├── prometheus.yml
+│   ├── loki-config.yaml
+│   ├── promtail-config.yaml
+│   └── nginx.conf
 ├── docs/
-│ ├── deployment-guide.md
-│ └── troubleshooting.md
+│   ├── deployment-guide.md
+│   └── troubleshooting.md
 └── screenshots/
-├── grafana-dashboard.png
-├── loki-logs.png
-└── mysql-replication.png
-
+    ├── grafana-dashboard.png
+    ├── loki-logs.png
+    └── mysql-replication.png
+​```
 
 ## 核心功能
 - 若依OA系统的部署与Nginx反向代理
