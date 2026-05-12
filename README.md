@@ -27,13 +27,26 @@
 
 ## 项目结构
 ops-platform/
-├── README.md # 项目说明
-├── arch.png # 架构图
-├── scripts/ # Shell运维脚本
-├── configs/ # 核心服务配置文件
-├── docs/ # 部署文档和排障指南
-├── screenshots/ # 监控、日志、数据库截图
-└── .gitignore # Git忽略规则
+├── README.md
+├── arch.png
+├── .gitignore
+├── scripts/
+│ ├── start.sh
+│ ├── stop.sh
+│ ├── mysql_backup.sh
+│ └── check_app.sh
+├── configs/
+│ ├── prometheus.yml
+│ ├── loki-config.yaml
+│ ├── promtail-config.yaml
+│ └── nginx.conf
+├── docs/
+│ ├── deployment-guide.md
+│ └── troubleshooting.md
+└── screenshots/
+├── grafana-dashboard.png
+├── loki-logs.png
+└── mysql-replication.png
 
 
 ## 核心功能
