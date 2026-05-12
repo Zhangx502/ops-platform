@@ -28,28 +28,30 @@
 | V3 | 192.168.205.12 | 从库 + 日志 | MySQL 从库 + Loki + Node Exporter + Promtail |
 
 ## 项目结构
+
+```
 ops-platform/
 ├── README.md
 ├── arch.png
 ├── .gitignore
 ├── scripts/
-│ ├── start.sh
-│ ├── stop.sh
-│ ├── mysql_backup.sh
-│ └── check_app.sh
+│   ├── start.sh
+│   ├── stop.sh
+│   ├── mysql_backup.sh
+│   └── check_app.sh
 ├── configs/
-│ ├── prometheus.yml
-│ ├── loki-config.yaml
-│ ├── promtail-config.yaml
-│ └── nginx.conf
+│   ├── prometheus.yml
+│   ├── loki-config.yaml
+│   ├── promtail-config.yaml
+│   └── nginx.conf
 ├── docs/
-│ ├── deployment-guide.md
-│ └── troubleshooting.md
+│   ├── deployment-guide.md
+│   └── troubleshooting.md
 └── screenshots/
-├── grafana-dashboard.png
-├── loki-logs.png
-└── mysql-replication.png
-
+    ├── grafana-dashboard.png
+    ├── loki-logs.png
+    └── mysql-replication.png
+```
 ## 核心功能
 - 若依 OA 系统的部署与 Nginx 反向代理
 - MySQL 主从复制，保障数据高可用
